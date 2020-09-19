@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2019-10-31 22:14:28</p>
+                <p class='attribute'><strong>Duration: </strong>473.90 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 22, Pass: 17, Error: 5</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.MenuTest1</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_a_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_b_topRightMenu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_c_mainMenu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_d_bottom_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Questions & Answers
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_e_furniture_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_f_select_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">IndexError: Cannot choose from an empty sequence</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Tests\tests.py", line 110, in test_f_select_product
+    select_product.click_Product()
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Pages\productPage.py", line 18, in click_Product
+    page_item = random.choice(self.product_list)
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\random.py", line 261, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_g_purchase_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Element not found
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_h_art_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <a class="_a1295835" href="/jewelry/" data-tn="global-nav-item-link-jewelry-watches-shop-by-category-all-jewelry-watches">...</a> is not clickable at point (170, 168). Other element would receive the click: <a class="_a1295835" href="/art/" data-tn="global-nav-item-link-art-shop-by-category-all-art">...</a>
+  (Session info: chrome=77.0.3865.120)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Tests\tests.py", line 135, in test_h_art_menu
+    art_menu.art_subMenu()
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Pages\mainMenu.py", line 103, in art_subMenu
+    a_item.click()
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="_a1295835" href="/jewelry/" data-tn="global-nav-item-link-jewelry-watches-shop-by-category-all-jewelry-watches">...</a> is not clickable at point (170, 168). Other element would receive the click: <a class="_a1295835" href="/art/" data-tn="global-nav-item-link-art-shop-by-category-all-art">...</a>
+  (Session info: chrome=77.0.3865.120)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_i_select_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">IndexError: Cannot choose from an empty sequence</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Tests\tests.py", line 147, in test_i_select_product
+    select_product.click_Product()
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Pages\productPage.py", line 18, in click_Product
+    page_item = random.choice(self.product_list)
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\random.py", line 261, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_j_purchase_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Element not found
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_k_jw_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_l_select_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_m_purchase_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_n_fashion_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_o_select_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_p_purchase_product</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_q_interiors_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_r_nc_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_s_style_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_t_sale_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_u_myCart</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>select item:PURCHASE
+//div[@class='_b2db66f2']
+</p><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Delete')]"}
+  (Session info: chrome=77.0.3865.120)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Tests\tests.py", line 294, in test_u_myCart
+    view_product.purchase_product()
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Pages\myCart.py", line 112, in purchase_product
+    self.driver.find_element_by_xpath("//span[contains(text(),'Delete')]").click()
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mumtaz\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Delete')]"}
+  (Session info: chrome=77.0.3865.120)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_w_myAccountMenu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">IndexError: list index out of range</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Tests\tests.py", line 320, in test_w_myAccountMenu
+    myAccountMenu.myAccount_menu()
+  File "C:\Users\mumtaz\Desktop\python\stdibs1\Pages\loginPage.py", line 106, in myAccount_menu
+    self.driver.find_elements(By.XPATH, self.myAccount_xpath)[self.sub_menu].click()
+IndexError: list index out of range
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 22, Pass: 17, Error: 5 -- Duration: 473.90 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
